@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>鮪のプロフィール</title>
+<!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/myindex.css" rel="stylesheet">
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        .header {
+            text-align: left;
+            height: 3em;
+            line-height: 3em;
+            color: #585858;
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light"style="background-color:#CED8F6;">      
+        <div class="navbar-nav" id="navbarSupportedContent">
+            <div class="container">
+                <div class="row">
+                    <a class="nav-link" href="index.html"><div class="col-xs-12 col-sm-6 col-md-1 header">Home</div></a>
+                    <a class="nav-link" href="portfolioB2.html"><div class="col-xs-12 col-sm-6 col-md-1 header">Portfolio</div></a>
+                    <a class="nav-link" href="languages.html"><div class="col-xs-12 col-sm-6 col-md-1 header">Languages</div></a>
+                    <a class="nav-link" href="contacts.html"><div class="col-xs-12 col-sm-6 col-md-1 header">Contacts</div></a>
+                    <a class="nav-link" href="tools.html"><div class="col-xs-12 col-sm-6 col-md-1 header">Tools</div></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main role="main">
+
+            <div class="container-fluid mx-auto text-center about-contents" id="about">
+                    <h1>Portfolio</h1>
+                    <ul class="list-group">
+                            <li class="list-group-item"><a href="portfolioB1.html">B1</a></li>
+                            <li class="list-group-item"><a href="portfolioB2.html">B2</a></li>
+                            <li class="list-group-item"><a href="portfolioB3.html">B3</a></li>
+            </div>
+           
+            <div class="album py-5 bg-light">
+              <div class="container">
+      
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                        <img class="card-img-top" src="https://msmaguro.net/imges/Fish/fish2.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">CNNを使った検出器作りました。初めての動画に対してもある程度の精度が出ます。 サンゴ、草などに対して弱いです。データをもっと用意すればそれを解消できると思いますが...</p>
+                            <p><a href="https://t.co/Q3jv3qWIfS">データはこちらから集めさせて頂きました。NHK様提供です。</a></p>
+                            <p><a href="http://amzn.asia/d/frwchYU">参考にした書籍</a></p>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                        <img class="card-img-top" src="https://msmaguro.net/imges/TweetMake/TweetMake.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p>自分のツイートを形態素解析で分解し、それを使ってモデルの学習。
+                            <br>精度はダメダメですね...意味のある文章を生成するのは難しいですね。
+                            <br>wikipediaを学習データとして使えばもっと精度上がるかも。
+                            </p>                       
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                        <img class="card-img-top" src="imges/quickdraw/quickdraw.png" alt="Card image cap">
+                        <div class="card-body">
+                                <p>
+                                <br>深層学習で落書きの認識を行いました。
+                                <br>Pytorchで用意されているResnetをfinetuningして、モデルを作成しました。
+                                <br><a href="https://quickdraw.withgoogle.com">Quick,Draw!</a>
+                                <br>上のリンクからデータを取得しました。
+                                </p>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                        <img class="card-img-top" src="imges/AlleReduce/menu.png" alt="Card image cap">
+                        <div class="card-body">
+                                <p>
+                                <br>Hack U 近畿大学 2018で開発した作品です。
+                                <br>Ruby on RailsでWebアプリケーションをチーム開発しました。
+                                <br>ユーザーが登録した７大アレルギーの情報を使って、選択した店舗で食べれるメニューをすぐわかるようにしました。
+                                <br>erbファイルでの記述をやめ、HTMLファイルで開発を進めたところサーバーからのJSONの取得に躓いてしまいました...
+                                <br>ローカル環境だけでテストをするのではなく、サーバーでのテストも細やかにすべきでした。
+                                <br><a href="https://github.com/MasayaGit/Allergy">Github(erbファイルでの開発)</a>
+                                <br><a href="https://msmaguro.net/AlleReduce/">HTMLファイルでの開発</a>
+                                </p>
+
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                            <div class="card mb-4">
+                            <img class="card-img-top" src="https://msmaguro.net/imges/ios_machine/iosMovie.MP4" alt="image">
+                            <div class="card-body">
+                                <p>CoreMLを使ってiosに機械学習を導入する方法を勉強しました。
+                                <br>本当はCoreMLを使って、オリジナルモデルを導入したかったのですが、
+                                <br>上手くいきませんでした...
+                                <br>参考にしたもの
+                                <br><a href="https://qiita.com/shtnkgm/items/43e97595392168e6ada8">1</a>
+                                <br><a href="https://www.youtube.com/watch?v=p6GA8ODlnX0">2</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                        <img class="card-img-top" src="imges/animeGAN/DRAGAN2.png" alt="Card image cap">
+                        <div class="card-body">
+                                <p>
+                                <br>GANでアニメ画像の生成
+                                <br>上にある画像はDRAGANのみを使用した場合の結果です。
+                                <br>SRResNetとDRAGANを用いたものは、論文のようないい感じにはならなかったです...
+                                <br><a href="https://github.com/MasayaGit/AnimeGAN">Github</a>
+                                </p>
+
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+
+</body>
+
+</html>
